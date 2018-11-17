@@ -1,0 +1,38 @@
+ticker,Category,Exhcnage,name
+CSGN,Bank,SE,Credit Suisse
+UBSG,Bank,SE,UBS
+BAER,Bank,SE,Julius Baer
+VONN,Bank,SE,Vontobel Holding
+SNBN,Bank,SE,Schweizerische Nationalbank
+BCGE,Bank,SE,Banque Cantonale de Geneve
+VPBN,Bank,SE,VP Bank AG
+LLBN,Bank,SE,Liechtensteinische Landesbank
+TKBP,Bank,SE,Thurgauer Kantonalbank
+BCJ,Bank,SE,Banque Cantonale du Jura SA
+LINN,Bank,SE,Bank Linth
+ZG,Bank,SE,Zuger Kantonalbank AG
+GLKBN,Bank,SE,Glarner Kantonalbank
+BSKP,Bank,SE,Basler Kantonalbank AG
+WKBN,Bank,SE,Banque Cantonale du Valais
+GLKBN,Bank,SE,Glarner Kantonalbank
+HBLN,Bank,SE,Hypothekarbank Lenzburg AG
+BCVN,Bank,SE,Banque Cantonale Vaudoise
+SGKN,Bank,SE,St Galler Kantonalbank AG
+BLKB,Bank,SE,Basellandschaftliche Kantonalbank
+LUKN,Bank,SE,Luzerner Kantonalbank AG
+GRKP,Bank,SE,Graubuendner Kantonalbank
+VATN,Bank,SE,
+BEKN,Bank,SE,
+CMBN,Bank,SE,
+DBS,Bank,SGX,DBS Bank
+OCBC,Bank,SGX,OCBC Bank
+UOB,Bank,SGX,UOB Bank
+GE,Insurance,SGX,
+SGX ,Exchange,SGX,
+HLF,Financial,SGX,
+UOBK ,Financial,SGX,
+NOM,Financial,SGX,
+GINV,Financial,SGX,
+SIF,Financial,SGX,
+NPAC,Financial,SGX,
+AYONDO,Financial,SGX,
