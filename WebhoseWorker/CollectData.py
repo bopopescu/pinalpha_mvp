@@ -64,8 +64,3 @@ for name in df_companylist['CompanyName']:
     Qparams = setQueryParams(name, 'english', '', '')
     print(Qparams)
     getContent(Qparams)
-
-
-
-#filename = '../Data/CompanyList.csv'
-#print(getStockList(filename))
