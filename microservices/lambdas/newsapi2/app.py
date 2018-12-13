@@ -7,7 +7,8 @@ from json_tricks.np import dump, dumps
 from multiprocessing import Process, Pool
 import datetime
 from pymongo import MongoClient
-
+from bson import ObjectId
+import json
 
 
 
@@ -15,6 +16,13 @@ app = Chalice(app_name='newsapi2')
 
 app.debug = True
 config = Config()
+
+# https://stackoverflow.com/questions/16586180/typeerror-objectid-is-not-json-serializable to deal with the circular reference error
+class JSONEncoder(json.JSONEncoder):
+    def default(self, o):
+        if isinstance(o, ObjectId):
+            return str(o)
+        return json.JSONEncoder.default(self, o)
 
 
 
@@ -210,15 +218,21 @@ def companyFetch():
 	try:
 		request = app.current_request.query_params
 		company = request['company']
+		date = request['date']
 		myclient = MongoClient("mongodb+srv://pinalpha:PinAlpha123@cluster0-zuzix.mongodb.net/test")
 		db = myclient['production']
 		mwaCollection = db['mwatch']
 
-		myquery = { "company": company, 'sdate': datetime.datetime.now().strftime("%d-%m-%Y")}
+		myquery = { "company": company, 'sdate': date}
 		mydoc = list(mwaCollection.find(myquery))
 
 		if mydoc:
-			return mydoc[0]
+			myclient.close()
+			return JSONEncoder().encode(mydoc[0])
+
+		myclient.close()
+
+
 
 
 	except Exception as e:

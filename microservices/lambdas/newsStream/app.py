@@ -213,8 +213,6 @@ def insertEntry():
 
 
 
-
-
 @app.route('/news-stream-db-insert')
 def justdoit():
 	request = app.current_request.query_params
