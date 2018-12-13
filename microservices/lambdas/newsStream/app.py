@@ -14,12 +14,19 @@ import html as krekml
 from pymongo.errors import DuplicateKeyError
 import traceback
 import time
-
+from bson import ObjectId
 
 
 app = Chalice(app_name='newsStream')
 app.debug = True
 
+
+# https://stackoverflow.com/questions/16586180/typeerror-objectid-is-not-json-serializable to deal with the circular reference error
+class JSONEncoder(json.JSONEncoder):
+    def default(self, o):
+        if isinstance(o, ObjectId):
+            return str(o)
+        return json.JSONEncoder.default(self, o)
 
 
 
@@ -139,7 +146,7 @@ def getCompanyNews():
 
 
 
-@app.route('/news-stream-db-insert-one-entry')
+# @app.route('/news-stream-db-insert-one-entry')
 def insertEntry():
 	request = app.current_request.query_params
 	company = request['company'].lower()
@@ -301,14 +308,6 @@ def justdoit():
 
 
 
-
-
-
-
-
-
-
-
 @app.route('/news-insert-la')
 def serverjustdoit():
 	request = app.current_request.query_params
@@ -397,6 +396,27 @@ def serverjustdoit():
 			pass
 
 		return "Failure3"
+
+
+
+@app.route('/fetch-company-articles')
+def fetchArticles():
+	request = app.current_request.query_params
+	company = request['company']
+	fromDateString = request['from']
+	toDateString = request['to']
+	if 'page' in request.keys():
+		pageNum = request['page']
+	else:
+		pageNum = 1
+
+
+	myclient = MongoClient("mongodb+srv://pinalpha:PinAlpha123@cluster0-zuzix.mongodb.net/test")
+	pdb = myclient['production']
+	streamNewsCollection = pdb['allNews']
+	result = list(streamNewsCollection.find({"date": {"$lt": toDateString, "$gt": fromDateString}}).limit(20).skip((pageNum-1)*20))
+	return JSONEncoder().encode(result)
+
 
 
 
