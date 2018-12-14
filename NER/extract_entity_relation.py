@@ -1,6 +1,4 @@
-#from __future__ import unicode_literals, print_function
-
-import plac
+import en_core_web_sm
 import spacy
 
 TEXTS = [

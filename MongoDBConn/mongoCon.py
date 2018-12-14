@@ -1,10 +1,17 @@
 import pymongo
 
 def getDBCon():
-  myclient = pymongo.MongoClient("mongodb+srv://pinalpha:PinAlpha123@cluster0-zuzix.mongodb.net/test")
-  #print(myclient.database_names())
-  mydb = myclient.mydatabase
-  return mydb
+  #get username password
+  [username,pwd] = get_username_password()
+  #call for mongoDB and get the client
+  url = "mongodb+srv://%s:%s@cluster0-zuzix.mongodb.net/test"%(username,pwd)
+  myclient = pymongo.MongoClient(url)
+  return myclient
 
 
-#print(getDBCon())
+def get_username_password():
+  up_list = list()
+  #read username, password from config file
+  up_list = ["pinalpha","PinAlpha123"]
+  return up_list
+
