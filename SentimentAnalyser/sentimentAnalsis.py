@@ -1,9 +1,16 @@
 import pandas as pd
+import nltk
+from nltk.sentiment.vader import SentimentIntensityAnalyzer as SIA
+nltk.download('vader_lexicon')
 
 def get_sentiment_of_article(article):
     sentiment_scores = list()
     #call for a sentiment analysis, article can be one or mroe sentence
-    return sentiment_scores
+    sia = SIA()
+    sentiment_scores = sia.polarity_scores(article.lower())
+    #store the sentiment score in MongoDB for this article if it is not there,
+    # else return the existing sentiment score
+    return sentiment_scores["compound"] #only get the compound score
 
 def get_overall_sentiment_of_df(df):
     overall_sentiment = list()

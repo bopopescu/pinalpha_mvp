@@ -1,0 +1,22 @@
+Company,Theme,Factors
+DBS,NPL Ratio,South Asia Economy; South East Asia Economy; China Economy; Singapore Housing Loans; Hong Kong Economy
+DBS,NIM Ratio,Credit Cards; Federal Reserve Rates; SIBOY; HIBOR; Debit Cards; Cooling Measures
+DBS,Trade War,SEA Market; South Asia Market
+DBS,Private Wealth,HNI Growth; Private Wealth China
+DBS,Oil and Gas,Oil Prices; 
+DBS,Others,Digital Banking; Fintech; Investment Banking
+UOB,NPL Ratio,Thailand Economy; Indonesia Economy; Oil and Gas Loans; Singapore Housing Loans
+UOB,NIM Ratio,NIM Indonesia; SIBOR; Federal Reserve Rates; Corporate Bond Yields; Credit Card; Debit Card
+UOB,Trade War,South East Asia Market
+UOB,Private Wealth,Barclays Private Wealth Assets; HNI growth
+UOB,Oil and Gas,Loan Defaults 
+UOB,Others,Fintech; Domestic Business Expansion
+OCBC,NPL Ratio,China; Hong Kong; South East Asia; Singapore Housing Loans
+OCBC,NIM Ratio,Singapore; Malaysia; Inflation Rate; Credit Card; Federal Reserve Rates; SIBOR; HIBOR; NIM Hong Kong
+OCBC,Trade War,OCBC China Bank; China Economy; Blanket Tarrif
+OCBC,Private Wealth,NAB Privat Welath Business; HNI Growth
+OCBC,Oil and Gas,Oil prices
+OCBC,Others,Great Eastern Insurance
+Credit Suisse,Others,NNM Ratio;AUM Growth;Internation Wealth management;APAC;Siwss Universal Bank;Swiss Wealth Management
+Julius Baer,Others,Asia;NNM Ratio;Middle East;Macro Events
+UBS,Others,NNM Ratio; Wealth Management;Asset Management;Client Sentiment;Investment Banking;Leverage Ratio
