@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="2e95f476-976c-4ddb-89a6-f1756d2ac233" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/Data/CompanyThemes.csv" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ThemeAnalysis/BankingThemes.py" afterDir="false" />
@@ -10,12 +11,16 @@
       <change beforePath="$PROJECT_DIR$/Test/test_con.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/test_con.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/venv/pip-selfcheck.json" beforeDir="false" afterPath="$PROJECT_DIR$/venv/pip-selfcheck.json" afterDir="false" />
     </list>
+=======
+    <list default="true" id="2e95f476-976c-4ddb-89a6-f1756d2ac233" name="Default Changelist" comment="" />
+>>>>>>> ed5d1f75aede9c6fa409cf70a3c094ee473f8beb
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
   <component name="FUSProjectUsageTrigger">
     <session id="620691570">
       <usages-collector id="statistics.lifecycle.project">
@@ -149,6 +154,20 @@
         </leaf>
       </split-second>
     </splitter>
+=======
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MongoDBConn/mongoCon.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+>>>>>>> ed5d1f75aede9c6fa409cf70a3c094ee473f8beb
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -181,10 +200,17 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
+<<<<<<< HEAD
     <option name="x" value="2227" />
     <option name="y" value="225" />
     <option name="width" value="1843" />
     <option name="height" value="789" />
+=======
+    <option name="x" value="63" />
+    <option name="y" value="25" />
+    <option name="width" value="1857" />
+    <option name="height" value="1175" />
+>>>>>>> ed5d1f75aede9c6fa409cf70a3c094ee473f8beb
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -195,6 +221,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+<<<<<<< HEAD
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -216,9 +243,13 @@
           <select />
         </subPane>
       </pane>
+=======
+      <pane id="ProjectPane" />
+>>>>>>> ed5d1f75aede9c6fa409cf70a3c094ee473f8beb
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -233,7 +264,11 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="Python.test_con">
+=======
+  <component name="RunManager" selected="Python.main">
+>>>>>>> ed5d1f75aede9c6fa409cf70a3c094ee473f8beb
     <configuration name="CollectData" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="MVP" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -276,6 +311,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="MVP" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/neo4jDatabase" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/neo4jDatabase/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="mongoCon" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="MVP" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -297,28 +353,11 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="six_connect" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="MVP" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/config" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/config/six_connect.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+<<<<<<< HEAD
     <configuration name="test_con" type="PythonConfigurationType" factoryName="Python" temporary="true">
+=======
+    <configuration name="six_connect" type="PythonConfigurationType" factoryName="Python" temporary="true">
+>>>>>>> ed5d1f75aede9c6fa409cf70a3c094ee473f8beb
       <module name="MVP" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -330,7 +369,11 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+<<<<<<< HEAD
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Test/test_con.py" />
+=======
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/config/six_connect.py" />
+>>>>>>> ed5d1f75aede9c6fa409cf70a3c094ee473f8beb
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -344,11 +387,19 @@
       <item itemvalue="Python.mongoCon" />
       <item itemvalue="Python.six_connect" />
       <item itemvalue="Python.extract_entity_relation" />
+<<<<<<< HEAD
       <item itemvalue="Python.test_con" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.test_con" />
+=======
+      <item itemvalue="Python.main" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.main" />
+>>>>>>> ed5d1f75aede9c6fa409cf70a3c094ee473f8beb
         <item itemvalue="Python.mongoCon" />
         <item itemvalue="Python.extract_entity_relation" />
         <item itemvalue="Python.six_connect" />
@@ -370,10 +421,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1920" y="-2" width="1920" height="1082" extended-state="6" />
-    <editor active="true" />
+    <frame x="63" y="25" width="1857" height="1175" extended-state="6" />
     <layout>
+<<<<<<< HEAD
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20347917" />
+=======
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1395856" />
+>>>>>>> ed5d1f75aede9c6fa409cf70a3c094ee473f8beb
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -410,9 +464,6 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout-to-restore>
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/config/mysql_connect.py">
@@ -467,7 +518,11 @@
         <state relative-caret-position="255">
           <caret line="17" selection-start-line="17" selection-end-line="17" />
           <folding>
+<<<<<<< HEAD
             <marker date="1544761580277" expanded="true" signature="302:324" ph="..." />
+=======
+            <element signature="e#0#16#0" expanded="true" />
+>>>>>>> ed5d1f75aede9c6fa409cf70a3c094ee473f8beb
           </folding>
         </state>
       </provider>
@@ -477,11 +532,16 @@
         <state>
           <caret column="35" selection-start-column="35" selection-end-column="35" />
           <folding>
+<<<<<<< HEAD
             <marker date="1544761356010" expanded="true" signature="73:78" ph="..." />
+=======
+            <element signature="e#0#32#0" expanded="true" />
+>>>>>>> ed5d1f75aede9c6fa409cf70a3c094ee473f8beb
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/ThemeAnalysis/BankingThemes.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -504,12 +564,28 @@
             <element signature="e#0#33#0" expanded="true" />
             <marker date="1545185703686" expanded="true" signature="275:280" ph="..." />
             <marker date="1545185703686" expanded="true" signature="356:763" ph="..." />
+=======
+    <entry file="file://$PROJECT_DIR$/NER/extract_entity_relation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebhoseWorker/CollectData.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="801">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+>>>>>>> ed5d1f75aede9c6fa409cf70a3c094ee473f8beb
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SentimentAnalyser/sentimentAnalsis.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="195">
           <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
           <folding>
@@ -533,6 +609,10 @@
             <marker date="1545185297056" expanded="true" signature="504:509" ph="..." />
             <marker date="1545185297056" expanded="true" signature="824:1119" ph="..." />
           </folding>
+=======
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+>>>>>>> ed5d1f75aede9c6fa409cf70a3c094ee473f8beb
         </state>
       </provider>
     </entry>
