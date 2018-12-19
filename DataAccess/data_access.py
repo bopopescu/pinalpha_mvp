@@ -35,3 +35,22 @@ def get_news_from_api(company,start_date,end_date):
     call_url = baseAPI % (company,start_date,end_date,1)
     response = requests.get(call_url)
     return response
+
+def getSentences(article):
+    sentences = [x for x in article.sents]
+    return(sentences)
+
+def remove_noisy_articles(df,word):
+    Word_Count = []
+    for content in df['Content']:
+        k=0
+        article = nlp(content)
+        sentences = getSentences(article)
+        for sent in sentences:
+            words = sent.text.lower().split()
+            for i in words:
+                if(i==word):
+                    k=k+1
+        Word_Count.append(k)
+    df['Word_Count'] = pd.Series(Word_Count, index=df.index)
+    return df[df['Word_Count']>1]

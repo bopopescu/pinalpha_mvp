@@ -22,3 +22,4 @@ def perform_analysis(df,company): #df is for all the articles for today
         impact = SA.get_overall_sentiment_of_df(df)#for now only calculate the Sentiment
          #store the current analysis on MongoDB with (CompanyID,Date,Impact,Articles [ArticleID,Impact])
     return impact
+
