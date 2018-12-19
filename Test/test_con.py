@@ -24,8 +24,19 @@ def test_sentiment():
     print(scores)
 
 test_database()
-#test_sentiment()
-#df = da.get_themes_from_file(pwd+"/Data/CompanyThemes.csv")
-#print(df['Theme'])
-response = da.get_news_from_api("OCBC","2018-11-17","2018-12-19")
-cleaned_response = da.remove_noisy_articles(response,"ocbc")
+
+#global Variables
+companyList = ["UOB","OCBC","DBS","UBS","credit%20suisse","julius%20baer"]
+StartDate = "2018-11-16"
+EndDate = "2018-12-19"
+
+#process data
+for companyName in companyList:
+    response = da.get_news_from_api(companyName, StartDate, EndDate)
+    print(len(response))
+    cleaned_response = da.remove_noisy_articles(response, companyName)
+    print(len(cleaned_response))
+    da.map_article_sentences(cleaned_response,companyName)
+
+#da.get_sentences_with_theme("Test")
+#    print(json.dumps(item))
