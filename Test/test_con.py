@@ -2,6 +2,8 @@ import MongoDBConn.mongoCon as mc
 import SentimentAnalyser.sentimentAnalsis as sa
 import ThemeAnalysis.BankingThemes as themes
 import DataAccess.data_access as da
+import json
+from pandas.io.json import json_normalize
 
 pwd = "/home/kasun/PycharmProjects/MVP/"
 
@@ -26,4 +28,4 @@ test_database()
 #df = da.get_themes_from_file(pwd+"/Data/CompanyThemes.csv")
 #print(df['Theme'])
 response = da.get_news_from_api("OCBC","2018-11-17","2018-12-19")
-print(response.json())
+cleaned_response = da.remove_noisy_articles(response,"ocbc")

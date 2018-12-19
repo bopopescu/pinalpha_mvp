@@ -1,6 +1,9 @@
 import pandas as pd
 import MongoDBConn.mongoCon as mc
 import requests
+import re
+import json
+from pandas.io.json import json_normalize
 
 def get_today_news_data_mongo(company):
     #get mongo connection
@@ -34,23 +37,19 @@ def get_news_from_api(company,start_date,end_date):
               "company=%s&from=%s&to=%s&page=%s"
     call_url = baseAPI % (company,start_date,end_date,1)
     response = requests.get(call_url)
-    return response
+    return response.json()
 
 def getSentences(article):
     sentences = [x for x in article.sents]
     return(sentences)
 
-def remove_noisy_articles(df,word):
-    Word_Count = []
-    for content in df['Content']:
-        k=0
-        article = nlp(content)
-        sentences = getSentences(article)
-        for sent in sentences:
-            words = sent.text.lower().split()
-            for i in words:
-                if(i==word):
-                    k=k+1
-        Word_Count.append(k)
-    df['Word_Count'] = pd.Series(Word_Count, index=df.index)
-    return df[df['Word_Count']>1]
+def remove_noisy_articles(news_json,word):
+    match_string = r"\b" + word + r"\b"
+    for idx,item in enumerate(news_json):
+        try:
+            count = len(re.findall(match_string, item.get('article'), re.IGNORECASE))
+            if (count <= 1):
+                news_json.pop(idx)
+        except:
+            news_json.pop(idx)
+    return news_json
