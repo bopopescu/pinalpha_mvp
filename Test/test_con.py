@@ -4,6 +4,8 @@ import ThemeAnalysis.BankingThemes as themes
 import DataAccess.data_access as da
 import json
 from pandas.io.json import json_normalize
+import SentimentAnalyser.keyPhraseParsing as kp
+import NewsAPIWorker.DailyStreamer as dailystreamer
 
 pwd = "/home/kasun/PycharmProjects/MVP/"
 
@@ -23,20 +25,26 @@ def test_sentiment():
     scores = sa.get_sentiment_of_article(Text)
     print(scores)
 
-test_database()
+#test_database()
 
 #global Variables
-companyList = ["UOB","OCBC","DBS","UBS","credit%20suisse","julius%20baer"]
-StartDate = "2018-11-16"
-EndDate = "2018-12-19"
+# companyList = ["UOB","OCBC","DBS","UBS","Credit%20Suisse","Julius%20Baer"]
+# StartDate = "2018-11-16"
+# EndDate = "2018-12-19"
+# #
+# # #process data
+# for companyName in companyList:
+#     response = da.get_news_from_api(companyName, StartDate, EndDate)
+#     print(len(response))
+#     cleaned_response = da.remove_noisy_articles(response, companyName)
+#     print(len(cleaned_response))
+#     da.map_article_sentences(cleaned_response,companyName)
 
-#process data
-for companyName in companyList:
-    response = da.get_news_from_api(companyName, StartDate, EndDate)
-    print(len(response))
-    cleaned_response = da.remove_noisy_articles(response, companyName)
-    print(len(cleaned_response))
-    da.map_article_sentences(cleaned_response,companyName)
-
-#da.get_sentences_with_theme("Test")
+#da.get_sentences_with_theme("UBS","pirvate banking")
 #    print(json.dumps(item))
+#da.delete_duplicates()
+#da.get_sentences_with_theme("UBS","trade war")
+#print(kp.sentence_removed_stopped_word("I'll update my review in a few weeks! But my initial reaction is WOW"))
+
+#print(da.get_news_keyword())
+dailystreamer.collect_news()

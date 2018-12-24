@@ -3,6 +3,7 @@ import nltk
 from nltk.sentiment.vader import SentimentIntensityAnalyzer as SIA
 from nltk import sent_tokenize
 import uuid
+import SentimentAnalyser.keyPhraseParsing as kp
 
 nltk.download('vader_lexicon')
 
@@ -43,6 +44,7 @@ def get_Sentences(article,articleId,date,companyName):
             sent_dict["company"]=companyName
             sent_dict["sentence"] = sent
             sent_dict["impact"] = get_sentiment_of_article(sent)
+            sent_dict["shortened"] = kp.sentence_removed_stopped_word(sent)
             sent_list.append(sent_dict)
     else:
         print(article)

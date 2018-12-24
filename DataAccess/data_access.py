@@ -77,12 +77,31 @@ def map_article_sentences(all_articles,companyName):
             sentences_list.append(sentences_dict)
     return sentences_list
 
-def get_sentences_with_theme(theme):
+def get_sentences_with_theme(company,theme):
     mongoCon = mc.getDBCon()#connection
     db = mongoCon.production#databse
     sentence_collection = db.sentence_article_map#collection
-    query = {"sentence":{"$regex": theme}}
+    query = { "$and": [ {"company":company},{"sentence":{"$regex": theme}} ] }
     mydoc = sentence_collection.find(query)
     for x in mydoc:
         print(x)
     return None
+
+def delete_duplicates():
+    mongoCon = mc.getDBCon()  # connection
+    db = mongoCon.production  # database
+    sentence_collection = db.sentence_article_map  # collection
+    try:
+        result = sentence_collection.ensureIndex({"sentence": 1, "company": 1}, {"unique": "true", "dropDups": "true"})
+        print(result)
+    except:
+        print("Delete Error")
+    return None
+
+def get_news_keyword():
+    df = pd.DataFrame()
+    try:
+        df = pd.read_csv("../Data/NewsCompanyKeyWords.csv")
+    except:
+        print("File Read Error")
+    return df
