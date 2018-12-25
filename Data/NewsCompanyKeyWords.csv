@@ -1,12 +1,4 @@
-pinalpha_company_name,pinalpha_company_code
-Ascendas,A17U
-ABB LTD,ABBN
-ADECCO,ADEN
-Julius Bär,BAER
-Julius Baer,BAER
-Keppel Corp,BN4
-Yangzijiang Shipbuilding,BS6
-Jardine C&C,C07
+keyphrase,pinalpha_company_code
 City Development Ltd,C09
 CapitaLand,C31
 CapitaMall Trust,C38U
@@ -49,3 +41,6 @@ ThaiBev,Y92
 Singapore Telecommunications ,Z74
 SingTel,Z74
 ZURICH INSURANCE,ZURN
+trade war, tw
+wealth management, wm
+private banking, pb

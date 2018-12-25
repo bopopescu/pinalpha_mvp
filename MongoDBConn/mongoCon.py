@@ -12,6 +12,6 @@ def getDBCon():
 def get_username_password():
   up_list = list()
   #read username, password from config file
-  up_list = ["pinalpha","PinAlpha123"]
+  up_list = ["pinalpha","PinAlpha123"] #for now hard coded
   return up_list
 
