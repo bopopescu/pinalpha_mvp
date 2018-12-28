@@ -1,10 +1,10 @@
-import MongoDBConn.mongoCon as mc
-import SentimentAnalyser.sentimentAnalsis as sa
+import DBConn.mongoCon as mc
+import NLPAnalysis.sentimentAnalsis as sa
 import ThemeAnalysis.BankingThemes as themes
 import DataAccess.data_access as da
 import json
 from pandas.io.json import json_normalize
-import SentimentAnalyser.keyPhraseParsing as kp
+import NLPAnalysis.keyPhraseParsing as kp
 import NewsAPIWorker.DailyStreamer as dailystreamer
 
 pwd = "/home/kasun/PycharmProjects/MVP/"

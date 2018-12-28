@@ -1,8 +1,8 @@
 import pandas as pd
-import MongoDBConn.mongoCon as mc
+import DBConn.mongoCon as mc
 import requests
 import re
-import SentimentAnalyser.sentimentAnalsis as sa
+import NLPAnalysis.sentimentAnalsis as sa
 import json
 from pandas.io.json import json_normalize
 

@@ -1,7 +1,7 @@
 from newsapi import NewsApiClient
 import DataAccess.data_access as da
 import datetime
-import MongoDBConn.mongoCon as mongo
+import DBConn.mongoCon as mongo
 import uuid
 
 def push_data_to_mongoDB(articles,search_query_id):

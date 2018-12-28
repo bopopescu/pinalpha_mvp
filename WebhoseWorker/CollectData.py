@@ -1,7 +1,7 @@
 import webhoseio
 import config.webhose_api_access as web
 import pandas as pd
-import MongoDBConn.mongoCon as mongo_db_con
+import DBConn.mongoCon as mongo_db_con
 import json
 
 def getToken():

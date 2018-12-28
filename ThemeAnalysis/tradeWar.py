@@ -1,5 +1,5 @@
-import MongoDBConn.mongoCon as mc
-import SentimentAnalyser.sentimentAnalsis as sa
+import DBConn.mongoCon as mc
+import NLPAnalysis.sentimentAnalsis as sa
 
 def read_tradewar_articles_bulk():
     mongoCon = mc.getDBCon()  # connection

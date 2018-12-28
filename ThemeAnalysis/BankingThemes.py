@@ -1,6 +1,6 @@
 import DataAccess as da
 import pandas as pd
-import SentimentAnalyser.sentimentAnalsis as SA
+import NLPAnalysis.sentimentAnalsis as SA
 
 #read updates themes for the given companies
 def get_themes_from_db(company):

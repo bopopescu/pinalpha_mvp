@@ -1,0 +1,852 @@
+"And that's it for Canada.",-1,0
+"I recorded this Saturday morning local before heading out for last runs with the family.",-1,0
+"It's been fun but as I just tweeted sitting here in the airport:
+Thats it for Canada!",-1,0
+"Its been fun, but its time for sunshine again pic.twitter.com/Pbxy83MlHo
+— Troy Hunt (@troyhunt) December 23, 2018
+This week I'm talking about my new (free!)",-1,0
+"Pluralsight course, yet more data breaches, some really wacky Spotify attitudes towards passwords, a cool new Report URI feature we're looking for beta testers on and introducing an all new sponsor - strongDM.",-1,0
+"That's it from Canada, it's off to a hot Aussie Christmas now and the next few days will come from sunny home 
+References
+It's a new Pluralsight course ("Managing the Modern Software Dependency Ecosystem")
+Spotify would like you to DM them your password (multiple operators asked for this in different ways, although Spotify did later tweet that they were looking into this practice)
+We're looking for people willing to test a cool new Report URI feature (DMARC reporting is pretty neat!)",-1,0
+"strongDM are an all new sponsor!",-1,0
+"(put your SSO to good work to grant access to server, DBs and audit a whole bunch of different activities in your environment)
+Weekly update",-1,0
+"UCF running back Adrian Killins often surprises people with his speed on the football field.",-1,0
+"But one year ago, it was Killins comments about speed that caused eyes to widen.",-1,0
+"In the lead-up to the Peach Bowl versus Auburn, Killins didnt hesitate when he told the Orlando Sentinel, SEC football, they dont have a lot of speed, honestly.",-1,0
+"Auburn hasnt seen any speed like we have here, so I would say they are in for a rude awakening.",-1,0
+"So, here we are again.",-1,0
+"The Knights are preparing for yet another New Years Day bowl matchup against yet another SEC opponent.",-1,0
+"But this time around, Killins was much more measured while talking about the oppositions speed.",-1,0
+"He said LSU has a fast-paced defense.",-1,0
+"They are very energetic and they fly around to the ball.",-1,0
+"They've got a lot of guys flying around on film.",-1,0
+"Wide receiver Tre Nixon was not yet a Knight when he read Killins 2017 hot take.",-1,0
+"I remember that article, he said this week.",-1,0
+"...",-1,0
+"The thing is, the SEC is fast.",-1,0
+"They [the LSU Tigers] are fast.",-1,0
+"I give them their credit where credit is due.",-1,0
+"But this team is really fast, too.",-1,0
+"We have a lot of playmakers.",-1,0
+"Nixon can give valid comparisons because he has lived life in both conferences.",-1,0
+"He spent 2016 and 2017 at Ole Miss before transfering to UCF this spring.",-1,0
+"He said his time as a Rebel definitely prepared him for what he will face lining up against the LSU defense during hte Fiesta Bowl.",-1,0
+"But he said he has already seen much of the same this season in the American Athletic Conference.",-1,0
+"To be honest, there really isn't a difference, Nixon said.",-1,0
+"Going from playing at Ole Miss to coming to play with this team, everybody here has a lot of speed.",-1,0
+"The DBs, same speed, same strength.",-1,0
+"There really is not much of a difference.",-1,0
+"The Knights defensive backs will have to deal with more than just fantastic speed from LSUs wideouts.",-1,0
+"As defensive line coach Shane Burnham said, their receivers look like tight ends.",-1,0
+"A mixture of size, speed, length and athleticism helps the Tigers create mismatches out wide against almost every opponent.",-1,0
+"But secondary coach Willie Martinez said his defensive backs already get a good primer for a high level of competition during each practice.",-1,0
+"We think we go against some pretty good wide receivers every day, he said.",-1,0
+"Weve got the tall guys.",-1,0
+"We've got the small guys, the medium guys, the quick guys, that change of direction.",-1,0
+"Being able to practice against those guys each and every day since we've been here allows us to be ready and prepared for the teams that we play each and every Saturday.",-1,0
+"Or in this case, in this game that we're playing on January 1.",-1,0
+"No.",-1,0
+"8 UCF will look to extend the nations longest win streak when it lines up against No.",-1,0
+"11 LSU on Jan. 1.",-1,0
+"Kickoff is set for 1 p.m. Eastern time and will air on ESPN.",-1,0
+"The Knights will once again get a shot to prove that they can withstand, match and excel against whatever comes their way from an SEC power.",-1,0
+"And in one area -- speed -- the Knights still believe, yes, UCF has an edge there.",-1,0
+"They've got some linebackers that can really run.",-1,0
+"I think it's going to be good matchup against our backs and guys that, when we get in space, we're going to see who's faster, offensive tackle Wyatt Miller said.",-1,0
+"I think we have the upper hand in that one, but we'll see.",-1,0
+"Java
+&gt;&gt;&gt;   
+Fri May 25 20:46:06 2007//controlfile  
+ Starting control autobackup  
+ Control autobackup written to DISK device  
+ handle '/ora_rman_backup/crtl_backup/c-4205638757-20070525-00'  
+ Fri May 25 20:46:11 2007 //  
+ Thread 1 advanced to log sequence 535  
+ Current log# 1 seq# 535 mem# 0: /dev/udpay/lv_redo11_256m  
+ Current log# 1 seq# 535 mem# 1: /dev/udpay/lv_redo12_256m  
+ Fri May 25 20:46:11 2007 //  
+ ARCH: Evaluating archive log 6 thread 1 sequence 534  
+ ARCH: Beginning to archive log 6 thread 1 sequence 534  
+ Creating archive destination LOG_ARCHIVE_DEST_1: '/archivelog/arch/1_534.dbf'  
+ Fri May 25 20:46:12 2007 //  
+ ARC0: Evaluating archive log 6 thread 1 sequence 534  
+ ARC0: Unable to archive log 6 thread 1 sequence 534  
+ Log actively being archived by another process  
+ Fri May 25 20:46:15 2007 //3  
+ ARCH: Completed archivinglog 6 thread 1 sequence 534  
+ Fri May 25 20:46:18 2007 //3  
+ Thread 1 advanced to log sequence 536  
+ Current log# 2 seq# 536 mem# 0: /dev/udpay/lv_redo21_256m 
+$ORACLE_HOME/bin/rman &lt; connect catalog rman/rman 
+ @rman;  
+ connect target sys/sys@udpay;  
+ CONFIGURE CONTROLFILE AUTOBACKUP FORMAT FOR DEVICE TYPE DISK TO '/ora_rman_backup/crtl_backup/%F';  
+ CONFIGURE CONTROLFILE AUTOBACKUP ON;  
+ CROSSCHECK ARCHIVELOG ALL;  
+ run{  
+ ALLOCATE CHANNEL ch1 DEVICE TYPE DISK;  
+ backup full databaseformat 'D:/%T_%d' include current controlfile;  
+ sql 'alter system archive log current';  
+ backupfilesperset 3 format 'D:/arch%u_%s_%p' archivelog all;  
+ DELETE NOPROMPT ARCHIVELOG UNTIL TIME 'SYSDATE-2';  
+ release channel ch1;  
+ }  
+ !!",-1,0
+"Log actively being archived by another process
+log_archive_max_processes2Oracle
+[oracle@jumper bdump]$ ps -ef|grep ora_arc
+oracle 11938 1 0 18:24 ?",-1,0
+"00:00:00 ora_arc0_eygle
+oracle 11940 1 0 18:24 ?",-1,0
+"00:00:00 ora_arc1_eygle
+oracle 16260 11894 0 20:21 pts/5 00:00:00 grep ora_arc
+*** 2007-06-06 20:23:50.510
+WAIT #0: nam='rdbms ipc message' ela= 59999293 p1=6000 p2=0 p3=0
+WAIT #0: nam='control file sequential read' ela= 76 p1=0 p2=1 p3=1
+WAIT #0: nam='control file sequential read' ela= 36 p1=0 p2=370 p3=1
+WAIT #0: nam='control file sequential read' ela= 36 p1=0 p2=8 p3=1
+WAIT #0: nam='control file sequential read' ela= 30 p1=0 p2=9 p3=1
+*** 2007-06-06 20:24:51.950
+WAIT #0: nam='rdbms ipc message' ela= 59999344 p1=6000 p2=0 p3=0
+WAIT #0: nam='control file sequential read' ela= 72 p1=0 p2=1 p3=1
+WAIT #0: nam='control file sequential read' ela= 35 p1=0 p2=370 p3=1
+WAIT #0: nam='control file sequential read' ela= 35 p1=0 p2=8 p3=1
+WAIT #0: nam='control file sequential read' ela= 29 p1=0 p2=9 p3=1
+'rdbms ipc message' 
+*** 2007-06-06 20:01:15.830
+WAIT #0: nam='rdbms ipc message' ela= 148300048 p1=14831 p2=0 p3=0
+a*** 2007-06-06 20:06:23.030
+WAIT #0: nam='rdbms ipc message' ela= 299999745 p1=30000 p2=0 p3=0
+a*** 2007-06-06 20:11:30.230
+WAIT #0: nam='rdbms ipc message' ela= 299999735 p1=30000 p2=0 p3=0
+a*** 2007-06-06 20:16:37.430
+WAIT #0: nam='rdbms ipc message' ela= 299999779 p1=30000 p2=0 p3=0
+a*** 2007-06-06 20:21:44.630
+alter system archive log currentOracle Post
+*** 2007-06-06 19:58:43.970
+WAIT #0: nam='rdbms ipc message' ela= 148134746 p1=30000 p2=0 p3=0
+WAIT #0: nam='control file sequential read' ela= 36 p1=0 p2=1 p3=1
+WAIT #0: nam='control file sequential read' ela= 29 p1=0 p2=369 p3=1
+WAIT #0: nam='control file sequential read' ela= 32 p1=0 p2=8 p3=1
+WAIT #0: nam='control file sequential read' ela= 29 p1=0 p2=10 p3=1
+:
+Wed Jun 6 19:58:43 2007
+ARCH: Evaluating archive log 4 thread 1 sequence 305
+ARCH: Beginning to archive log 4 thread 1 sequence 305
+Creating archive destination LOG_ARCHIVE_DEST_1: '/opt/oracle/product/9.2.0/dbs/arch1_305.dbf'
+Wed Jun 6 19:58:43 2007
+ARC1: Evaluating archive log 4 thread 1 sequence 305
+ARC1: Unable to archive log 4 thread 1 sequence 305
+Log actively being archived by another process
+switch logPost
+Oracle10g:
+Wed Jun 6 20:32:57 2007
+ARCH: Evaluating archive log 4 thread 1 sequence 75268
+Wed Jun 6 20:32:57 2007
+ARC0: Evaluating archive log 4 thread 1 sequence 75268
+ARC0: Unable to archive log 4 thread 1 sequence 75268
+Log actively being archived by another process
+Wed Jun 6 20:32:57 2007
+ARCH: Beginning to archive log 4 thread 1 sequence 75268 (2074.-1351690850:2074.-1351608674) (mmsdb)",-1,0
+"The Cowboys can clinch the NFC title with a win over the Buccaneers on, and a Seahawks win over the Chiefs will clinch a wild-card spot for them.",-1,0
+"But those arent the only things going on, as we take a look at The Posts Week 16 High Five.",-1,0
+"Last dance to watch
+Is this really the end for the Black Hole?",-1,0
+"When the Raiders play the Broncos on Sunday at the Oakland Coliseum, it might mark the final game they play in Oakland, with plans to relocated to Las Vegas next season.",-1,0
+"The thought of that made Raiders coach Jon Gruden a little introspective during the week.",-1,0
+"Grudens first head-coaching job came at age 34 in 1998 with the Raiders.",-1,0
+"The Coliseum has served as the Raiders home from 1966-81, and they return in 1995 (they played in Los Angeles from 1982-94).",-1,0
+"The city of Oaklands recent announcement of its plans to file a federal lawsuit against the Raiders and the NFL over the teams impending move to Las Vegas in 2020 has left matters very murky.",-1,0
+"The day after the lawsuit was filed, the Raiders pulled their offer to pay $7.5 million in rent for one final season in 2019 at the Oakland Coliseum off the table.",-1,0
+"Its a real football stadium, Gruden told reporters during the week.",-1,0
+"Its dirt, grass, its got tradition.",-1,0
+"Its where some of the best games in the history of football have been played.",-1,0
+"Its where some of the bestplayers in the history of the world have played football games.",-1,0
+"I mean there are a lot of things that have happened in that stadium and uh, next question.",-1,0
+"I dont want to start crying about a stadium.",-1,0
+"Gruden waxed poetic about just raging in the Black Hole, adding, Rocking and raging down there after the Steeler game [last weeks Oakland win over Pittsburgh], after a lot of wins over the years.",-1,0
+"Seeing a lot of the old highlights of great Raider teams, I get excited.",-1,0
+"I get emotional about it, and hopefully we get it all resolved so we can continue to play there.",-1,0
+"Possible farewell to watch
+Larry FitzgeraldAP
+When the Cardinals play their home finale against the Rams, its possible that will be the final home game in Arizona for icon Larry Fitzgerald.",-1,0
+"There has been much speculation about the future of Fitzgerald, the 15-year star receiver whos been to 11 Pro Bowls.",-1,0
+"His contract expires after this season, and general manager Steve Keim has told reporters the team will give Fitzgerald time to determine his future before he talks to him about another contract.",-1,0
+"This has led to many guesses, and the questions of late have dogged him.",-1,0
+"If I decide to retire, Ill let you guys know, Fitzgerald told reporters late in the week.",-1,0
+"Man, seriously.",-1,0
+"So, I dont understand why we keep asking these questions.",-1,0
+"You know me, Ive been answering for the last three years.",-1,0
+"Nothings going to change.",-1,0
+"Im never going to tell you, This is my last day.",-1,0
+"Im excited.",-1,0
+"Honor me.",-1,0
+"Those words would never come out of my mouth, ever.",-1,0
+"Its been a trying season for the 35-year-old Fitzgerald, whose numbers understandably have declined thanks to the teams quarterback situation in constant flux.",-1,0
+"The Cardinals began the season with Sam Bradford before changing to rookie Josh Rosen, whos struggled.",-1,0
+"The Cardinals are 3-11, and there is heavy speculation that rookie coach Steve Wilks might not make it to a second season.",-1,0
+"Fitzgerald, who entered this year with three consecutive 1,000-yard receiving seasons, has 59 catches for 645 yards and five TDs and has eclipsed 100 yards receiving in only one game.",-1,0
+"Asked if hes thought about the possibility of Sunday being his final home game, the humble Fitzgerald said, No thoughts on it, really.",-1,0
+"Its just another game for me.",-1,0
+"If anything changes, Ill let you guys know, though.",-1,0
+"Post-Cam period to watch
+It looks like Panthers quarterback Cam Newton will be shut down for the season because of his injured throwing shoulder.",-1,0
+"According to Panthers coach Ron Rivera, Newton definitely wont play Sunday against the Falcons.",-1,0
+"Enter backup Taylor Heinicke, whos thrown just five passes in two NFL seasons.",-1,0
+"Rivera said he gives the Panthers their best chance to win this week largely because of Newtons inability to throw deep passes as a result of his ailing shoulder.",-1,0
+"Newton has completed just nine passes of 20 yards or more this season and has five INTs and no TDs when throwing 15 or more yards during the Panthers current six-game losing streak which has left them 6-8 and virtually eliminated playoff contention.",-1,0
+"Cam NewtonGetty Images
+Its funny, because some of the DBs actually tell us on the field were not scared of yall throwing deep, Panthers receiver Jarius Wright told reporters.",-1,0
+"Theyve actually mentioned that multiple times.",-1,0
+"Just having [Taylor] out there keeps everybody honest.",-1,0
+"Wright, who played with Heinicke at Minnesota, sounded like hes looking forward to catching passes from him.",-1,0
+"The guy can throw the heck out of it, Wright said.",-1,0
+"He does a great job of reading coverages and making quick decisions.",-1,0
+"A lot of people dont realize he can move.",-1,0
+"Hes not a sitting duck back in the pocket.",-1,0
+"Newton, who underwent shoulder surgery during the 2017 offseason, hasnt been right for weeks.",-1,0
+"He hasnt rushed for a TD in the past seven games and has rushed for 33 or more yards rushing only once in that span.",-1,0
+"In the first seven games, he rushed for four touchdowns and had more than 33 yards six times.",-1,0
+"Newton was sacked nine times over the past three games and 19 times over the past seven after being sacked just 10 times the first seven games.",-1,0
+"After a 12-9 loss to the Saints on Monday, during which Newton rushed five times for 15 yards and had a season-low 52.5 passer rating, Carolina center Ryan Kalil said it was obvious after watching film of the game that Newton couldnt do it.",-1,0
+"Asked if its possible Newton could play in the Panthers season finale at New Orleans if they still had a mathematical chance to get into the playoffs, Rivera called it unlikely but added, crazy things can happen.",-1,0
+"Dallas rebound to watch
+Call it spin or whistling past a graveyard.",-1,0
+"Or call it prescient.",-1,0
+"But, after the Cowboys lost, 23-0, to the Colts last week, some of their players actually said they believed the loss might have been good for them.",-1,0
+"Quarterback Dak Prescott told reporters he thought maybe the Cowboys were too hot to trot after a five-game winning streak.",-1,0
+"Running back Ezekiel Elliott said, We needed to get put in check.",-1,0
+"As the 8-6 Cowboys prepared to play host to the Buccaneers with a chance to clinch the NFC East, coach Jason Garrett said he didnt agree with the narrative that his team had gotten cocky or complacent.",-1,0
+"With the Eagles (7-7) and Redskins (7-7) winning last Sunday, the Cowboys face more pressure to win this week Sunday.",-1,0
+"Three times in the Garrett era the Cowboys have had win-and-in scenarios, and they lost all three times.",-1,0
+"Garrett referred back to when the Cowboys were 3-5 and floundering as a show of their strength rebounding this season and believes this team is different.",-1,0
+"It goes back to mental toughness, Garrett told reporters.",-1,0
+"I think were all challenged by those things in our lives, in our careers, and certainly a football team gets challenged, as well.",-1,0
+"Its a matter of putting that last experience behind you and getting focused on this one and be your best for this experience through your preparation and through your focus and intensity when youre locked in on it.",-1,0
+"I think our team has actually done a really good job of that over the course of the year, handling some early adversity and came back and we won a few games in a row.",-1,0
+"Baker and Hue watch
+When the Browns play host to the Bengals, it will pit Browns rookie quarterback against his first NFL coach, Hue Jackson, whos now a member of the Bengals coaching staff after being fired by Cleveland earlier this season.",-1,0
+"After Jackson was fired, Mayfield didnt exactly have a lot of nice things to say about him.",-1,0
+"Mayfield tweaked Jackson for joining the Bengals, a rival of the Browns.",-1,0
+"And Cleveland got the best of the first meeting this season, a 35-20 Week 12 win at Cincinnati.",-1,0
+"When Bengals coach Marvin Lewis was asked by reporters about the Jackson-Mayfield relationship, it clearly touched a nerve.",-1,0
+"You want to talk about Browns and the Bengals?",-1,0
+"Lewis asked.",-1,0
+"Other than that, were done.",-1,0
+"Mayfield has been good enough in his rookie season that he was named as a fourth alternate in the Pro Bowl.",-1,0
+"Hes helped make a Browns franchise which was 3-36-1 under Jackson relevant again, having gone 4-2 since his firing.",-1,0
+"The young man has it, Browns interim coach Gregg Williams said.",-1,0
+"The energy that he brings to the game is unbelievable, receiver Rashard Higgins told reporters.",-1,0
+"Mayfield is one of just 11 rookies ever to have thrown for 3,000 yards and 20 TDs, and hes within five TDs of tying the rookie record of 26, shared by Peyton Manning and Russell Wilson.",-1,0
+"I believe hes one of a kind, receiver Breshad Perriman told reporters.",-1,0
+"We all just go as Bake goes.",-1,0
+"Even with the Browns playoff chances virtually non-existent, Mayfield is pushing his teammates for a strong finish in the final two games (Bengals and Ravens) with a chance to finish with the first winning season since 2007.",-1,0
+"We want to win our last two games, he said.",-1,0
+"Any guys on this team that dont want to do that, they need to get out.",-1,0
+"This story is aboutCowboys
+Published25m
+Share This Story On...
+Louis DeLuca/Staff Photographer 
+Dallas Cowboys quarterback Dak Prescott (4) looks for a receiver during the Tampa Bay Buccaneers vs. the Dallas Cowboys NFL football game at AT&amp;T Stadium in Arlington, Texas on Sunday, December 18, 2016.",-1,0
+"(Louis DeLuca/The Dallas Morning News)
+By
+Jon Machota , Staff Writer Contact Jon Machotaon Twitter:@jonmachota
+Here are three matchups to follow when the Cowboys host the Buccaneers on Sunday...
+Cowboys O-line vs.",-1,0
+"Buccaneers D-line
+Dallas was without All-Pro right guard Zack Martin last Sunday in Indianapolis.",-1,0
+"Starting left guard Xavier Su'a-Filo exited early in the second quarter with an eye injury.",-1,0
+"Su'a-Filo is expected to start against Tampa, but Martin is questionable.",-1,0
+"The Cowboys will need all the help they can get against a talented Buccaneers defensive front.",-1,0
+""Each week it seems like we got a unique challenge as a lot of teams in this league have put a lot of investment in that front," Cowboys offensive coordinator Scott Linehan said.",-1,0
+""And they're very similar to a lot of teams that we play in our division."",-1,0
+"Defensive end Jason Pierre-Paul leads the team with 11.5 sacks, followed by defensive end Carl Nassib with 6.5 and defensive tackle Gerald McCoy with 6.",-1,0
+"Tampa Bay's fourth starter up front is defensive tackle Vita Vea.",-1,0
+"The 12th overall pick in this year's draft was one of the Cowboys' 30 national pre-draft visitors.",-1,0
+"Chris O'Meara/AP 
+Tampa Bay Buccaneers wide receiver Mike Evans (13) before an NFL football game against the San Francisco 49ers Sunday, Nov. 25, 2018, in Tampa, Fla. (AP Photo/Chris O'Meara)
+Cowboys DBs vs. Bucs passing game
+Atlanta superstar receiver Julio Jones is the only player with more receiving yards than Tampa Bay's Mike Evans this season.",-1,0
+"Jameis Winston's favorite target has 74 receptions for 1,328 yards and five touchdowns on 120 targets.",-1,0
+"Evans also has 24 receptions of 20-or-more yards, second only to Kansas City's Tyreek Hill.",-1,0
+"On the other hand, there should be opportunities for the Dallas secondary to make plays against a Bucs offense that leads the NFL with 25 interceptions, five more than any other team.",-1,0
+""Evans, he's elite now," Cowboys defensive coordinator Rod Marinelli said.",-1,0
+""Somehow, when he starts scrambling, he finds No.",-1,0
+"13.",-1,0
+"They do a great job.",-1,0
+"They have great chemistry.",-1,0
+"[Winston's] a terrific quarterback, mobile guy and in the pocket.",-1,0
+"I think he's a winner.",-1,0
+"That guy just fights every down.",-1,0
+"He's a big-time competitor."",-1,0
+"Tom Fox/Staff Photographer 
+Dallas Cowboys outside linebacker Leighton Vander Esch (55) and middle linebacker Jaylon Smith (54) combine for the tackle of Atlanta Falcons wide receiver Julio Jones (11) during the third quarter at Mercedes-Benz Stadium in Atlanta, Sunday, November 18, 2018.",-1,0
+"The Cowboys pulled out a 22-19 win.",-1,0
+"(Tom Fox/The Dallas Morning News)
+Linebackers
+Carolina's Luke Kuechly and Seattle's Bobby Wagner were recognized earlier in the week as the NFC's two inside linebackers named to the Pro Bowl.",-1,0
+"The Cowboys and Buccaneers have a few players that were worthy of the conversation.",-1,0
+"Jaylon Smith and Leighton Vander Esch are both already over 100 tackles on the season.",-1,0
+"Tampa Bay's Lavonte David, who made the Pro Bowl in 2015, is over 100 tackles for the sixth time in the last seven seasons.",-1,0
+"David is one of the defenders Sean Lee studies most in the offseason.",-1,0
+""He's just an unbelievable athlete with great instincts who plays extremely hard and has played well for a long time," Lee said.",-1,0
+""He's a guy I've watched a ton of tape on, trying to steal stuff off of him."",-1,0
+"Twitter: @jonmachota
+This Topic is Missing Your Voice.",-1,0
+"View Comments",-1,0
+"Its not you, wide receivers.",-1,0
+"Its Julian Love.",-1,0
+"O.K., maybe thats not entirely true.",-1,0
+"In any breakupbe it romantic or pass-relatedeach party usually deserves a share of the blame/credit.",-1,0
+"And sometimes theres another guy (the quarterback) contributing to the predicament.",-1,0
+"This may feel like an inopportune time of year to discuss such matters, but there really is no good time.",-1,0
+"So on the eve of Christmas, and fairly close to the eve of the College Football Playoff and a Cotton Bowl matchup against Clemson, Notre Dame cornerback Love is going to teach us how to break up.",-1,0
+"Because, as the Fighting Irish video department pointed out earlier this season, the junior from Westchester, Ill., is very good at breaking up.",-1,0
+"Julian Loves breakup tip No.",-1,0
+"1: Let your fear be your guide.",-1,0
+"Love didnt come to Notre Dame expecting to wind up the schools career leader in pass breakups.",-1,0
+"In high school, he sought interceptions.",-1,0
+"He thought that would continue into college.",-1,0
+"Then he found himself on the field as a true freshman at Darrell K RoyalTexas Memorial Stadium during Notre Dames 5047 double-overtime loss to Texas.",-1,0
+"A cannon boomed after every Longhorns touchdown, and Love went from thinking about interceptions to thinking about survival.",-1,0
+"Love was one of five true freshmen who wound up logging starts in the Notre Dame secondary that season*.",-1,0
+"For part of that season, Love was too afraid to turn his head while in coverage.",-1,0
+"Youre so nervous that you dont even want to look back for the ball when its thrown, he says.",-1,0
+"Its like I dont want to look and miss.",-1,0
+"It was just nerves that made me do that early on.",-1,0
+"*Want an easy recipe for going 48?",-1,0
+"Find yourself in a spot that requires that many young contributors in the defensive backfield.",-1,0
+"Though born of fear, that habit taught Love a few things.",-1,0
+"First, college quarterbacks might tell you where theyre throwing before the ball is even snapped.",-1,0
+"Love noticed that quarterbacks at that level may give away the balls destination by where they look before the play, by the way they catch the snap or by where their head turns when they catch the snap.",-1,0
+"Love also realized that receivers would make terrible poker players.",-1,0
+"It might sound weird, but if Im running Im looking when he turns his head at his eyes, Love says.",-1,0
+"If I see his eyes getting wide
+Think about it from the receivers perspective.",-1,0
+"Youre giving maximum physical exertion, and you have to concentrate on catching a fast-moving oblong spheroid with one or more people waiting to hit you.",-1,0
+"Your eyes will turn into saucers when the ball comes near, no matter how badly youd like to hide your anticipation.",-1,0
+"Thats not something they can control, Love says.",-1,0
+"As Love grew more comfortable with the speed of the game, he learned that on some plays, he could gather this information and turn his head to see the quarterback or the ball.",-1,0
+"The fear fried his nerves at first, but it made him better in the long run.",-1,0
+"It transitioned to me looking when its appropriate and learning the key details of what the receivers are looking for, Love says.",-1,0
+"Julian Loves breakup tip No.",-1,0
+"2: Know when to break up and when to make a bigger commitment.",-1,0
+"The out route simultaneously offers the most potential glory and the most potential misery for a cornerback.",-1,0
+"Jump the route and arrive when the ball does, and it might be a pick-six.",-1,0
+"Jump the route too early, and the receiver will make the catch and run all day.",-1,0
+"Get caught flat-footed trying to decide whether to jump the route or secure the tackle, and then things can get really embarrassing.",-1,0
+"Thats where double moves come into play, Love says.",-1,0
+"A double move is a combination of a short route and a much longer route.",-1,0
+"A Sluggo (slant and go) is exactly what it sounds like.",-1,0
+"On that route, an outside receiver cuts in, plants and pushes straight upfield.",-1,0
+"In the out route scenario described above, Love has to beware of the out and up.",-1,0
+"A receiver might run an out, then stick his foot in the ground and push upfield when a corner bites on the false route.",-1,0
+"But if he reads the quarterbacks tells and reads the receivers eyes, Love can make the correct choice.",-1,0
+"And sometimes, a breakup isnt necessary.",-1,0
+"Sometimes, its better to pull in rather than push awayespecially when pulling in results in a touchdown for your team.",-1,0
+"Julian Loves breakup tip No.",-1,0
+"3: Even when youre planning to break up, sometimes you have to stay together and let them down easy (or hard).",-1,0
+"When guarding a receiver, Love will use his near arm to try to swat the ball.",-1,0
+"The other arm?",-1,0
+"Watch as it hovers around the receivers waist.",-1,0
+"Love has to be careful because if he gets too handsy with his off arm, he might draw a flag.",-1,0
+"But he needs that arm ready to close around the receivers body.",-1,0
+"If Love can deflect the ball, great.",-1,0
+"But sometimes the pass reaches its intended target.",-1,0
+"So Love needs that off arm ready to constrict and make the tackle to keep the receiver from gaining any additional yardage.",-1,0
+"Julian Loves breakup tip No.",-1,0
+"4: When in doubt, replace his hands.",-1,0
+"Todd Lyght, the 12-year NFL veteran who coaches Notre Dames secondary, teaches his DBs that the surest way to break up a pass is to find a way to replace the receivers hands with one of your own.",-1,0
+"So even if the quarterback masks where hes throwing the ball and the receivers eyes dont go wide when the ball approaches, the receiver cant fake bringing his hands into position to catch the ball.",-1,0
+"The DB has to take care not to shoot his hand between the receivers hands too early, because that would draw a flag if he knocks the receivers hands out of position before the pass reaches its destination.",-1,0
+"But if the DB times it correctly, his hand will arrive and take up the space between the receivers hands precisely when the ball arrives.",-1,0
+"Now lets watch Loves breakup tips in action.",-1,0
+"One of his favorite breakups came in 2017 on a third-and-two play at Stanford.",-1,0
+"Love was covering 6'3", 225-pound receiver J.J. Arcega-Whiteside, who basically is a living, breathing third-down conversion.",-1,0
+"The defense Notre Dame was playing called for Love to play inside leverage before the snap.",-1,0
+"Because of the play Stanford called, that put Love at an immediate disadvantage.",-1,0
+"He got a good release off me, Love says.",-1,0
+"And I jumped inside to block it, but he wasnt going inside.",-1,0
+"I was beat off the release.",-1,0
+"Arcega-Whiteside ran a corner route, pushing about 15 yards up the field before angling toward the sideline.",-1,0
+"Love, playing catch-up the entire time after getting beat off the line of scrimmage, didnt have much time to look at quarterback K.J.",-1,0
+"Costello.",-1,0
+"Instead, he used tip No.",-1,0
+"1.",-1,0
+"Take a look at Arcega-Whitesides eyes as the ball approaches.",-1,0
+"That gave Love a basic idea of when the ball would arrive.",-1,0
+"He knew by the eyes and the fact that Arcega-Whiteside slowed that Costello had thrown the ball slightly behind where it was supposed to go.",-1,0
+"An interception was still impossible, but the slight misfire created a breakup opportunity.",-1,0
+"Now, Love just had to replace Arcega-Whitesides hands.",-1,0
+"Love held his right hand for a beat as he waited for the ball.",-1,0
+"Then he fired it into the gap between Arcega-Whitesides waiting hands just as they began to come together in anticipation of the catch.",-1,0
+"When the ball arrived, it struck the back of Loves right handwhich was directly between each of Arcega-Whitesides hands.",-1,0
+"Breaking up will always be hard to do, but its a little easier if you follow Loves advice.",-1,0
+"Notre Dame Fans: Order SIs College Football Playoff Preview Special Issue
+Ive already ranked the best Christmas carols, but I have yet to rank the best Christmas movies.",-1,0
+"That changes today.",-1,0
+"1.",-1,0
+"National Lampoons Christmas Vacation2.",-1,0
+"Its a Wonderful Life3.",-1,0
+"Die Hard4.",-1,0
+"How The Grinch Stole Christmas (1967 version)5.",-1,0
+"Trading Places6.",-1,0
+"Home Alone7.",-1,0
+"The Nightmare Before Christmas8.",-1,0
+"Love Actually9.",-1,0
+"Elf10.",-1,0
+"Miracle On 34th Street (1947 version)
+1.",-1,0
+"Want to watch Nick Saban and ESPNs Maria Taylor play hoops while also advertising for a luxury car brand of which Saban just happens to co-own a dealership?",-1,0
+"Of course you do.",-1,0
+"2.",-1,0
+"Michigan State landed its first Australian punter this week when Jack Bouwmeester from Bendigo signed with the Spartans.",-1,0
+"On National Signing Day, Michigan State coach Mark Dantonio joined myself and Jason Horowitz on Playbook on SiriusXM Channel 84.",-1,0
+"I asked Dantonio about the process of recruiting Aussie punters, and his answer was amazing.",-1,0
+"3.",-1,0
+"Meanwhile, Michigan quarterback Shea Patterson will be returning for his senior season in Ann Arbor.",-1,0
+"The kids dragged me to Bumblebee this weekend.",-1,0
+"I wasnt thrilled.",-1,0
+"Michael Bay had thoroughly destroyed my favorite childhood toy line and cartoon at the multiplex, and I didnt feel like further contributing to its demise.",-1,0
+"So imagine my surprise when I watched a Transformers movie directed by someone who actually liked Transformers.",-1,0
+"Bay was a producer, but he let Travis Knight make a movie for all of us who cried when Optimus Prime died in the original Transformers animated movie.",-1,0
+"(Because we were seven.)",-1,0
+"Hopefully, this will make enough money to convince Bay to let Knight make a new series of movies that are actuallywhats the word?good.",-1,0
+"Im enjoying some time at home after a college football season that felt like it went by way too quickly, which means I havent been sampling all the delicious things this glorious nation has to offer.",-1,0
+"But this time has given me a chance to reflect on the best things I ate this season.",-1,0
+"So its time to present the Piggies
+Best wings:Dak in Chicago
+Best cheap eats:Russian Dumplings at Pauls Pelmeni in Madison, Wis.
+Best Choose-Your-Own-Adventure:Meat skewers at Pot N Spicy in Portland
+Best burgers:Honest Abes in Lincoln, Neb.",-1,0
+"Best Meal:Toups Meatery in New Orleans",-1,0
+"And that's it for Canada.",-1,0
+"I recorded this Saturday morning local before heading out for last runs with the family.",-1,0
+"It's been fun but as I just tweeted sitting here in the airport:
+Thats it for Canada!",-1,0
+"Its been fun, but its time for sunshine again pic.twitter.com/Pbxy83MlHo
+— Troy Hunt (@troyhunt) December 23, 2018
+This week I'm talking about my new (free!)",-1,0
+"Pluralsight course, yet more data breaches, some really wacky Spotify attitudes towards passwords, a cool new Report URI feature we're looking for beta testers on and introducing an all new sponsor - strongDM.",-1,0
+"That's it from Canada, it's off to a hot Aussie Christmas now and the next few days will come from sunny home 
+References
+It's a new Pluralsight course ("Managing the Modern Software Dependency Ecosystem")
+Spotify would like you to DM them your password (multiple operators asked for this in different ways, although Spotify did later tweet that they were looking into this practice)
+We're looking for people willing to test a cool new Report URI feature (DMARC reporting is pretty neat!)",-1,0
+"strongDM are an all new sponsor!",-1,0
+"(put your SSO to good work to grant access to server, DBs and audit a whole bunch of different activities in your environment)
+Weekly update",-1,0
+"UCF running back Adrian Killins often surprises people with his speed on the football field.",-1,0
+"But one year ago, it was Killins comments about speed that caused eyes to widen.",-1,0
+"In the lead-up to the Peach Bowl versus Auburn, Killins didnt hesitate when he told the Orlando Sentinel, SEC football, they dont have a lot of speed, honestly.",-1,0
+"Auburn hasnt seen any speed like we have here, so I would say they are in for a rude awakening.",-1,0
+"So, here we are again.",-1,0
+"The Knights are preparing for yet another New Years Day bowl matchup against yet another SEC opponent.",-1,0
+"But this time around, Killins was much more measured while talking about the oppositions speed.",-1,0
+"He said LSU has a fast-paced defense.",-1,0
+"They are very energetic and they fly around to the ball.",-1,0
+"They've got a lot of guys flying around on film.",-1,0
+"Wide receiver Tre Nixon was not yet a Knight when he read Killins 2017 hot take.",-1,0
+"I remember that article, he said this week.",-1,0
+"...",-1,0
+"The thing is, the SEC is fast.",-1,0
+"They [the LSU Tigers] are fast.",-1,0
+"I give them their credit where credit is due.",-1,0
+"But this team is really fast, too.",-1,0
+"We have a lot of playmakers.",-1,0
+"Nixon can give valid comparisons because he has lived life in both conferences.",-1,0
+"He spent 2016 and 2017 at Ole Miss before transfering to UCF this spring.",-1,0
+"He said his time as a Rebel definitely prepared him for what he will face lining up against the LSU defense during hte Fiesta Bowl.",-1,0
+"But he said he has already seen much of the same this season in the American Athletic Conference.",-1,0
+"To be honest, there really isn't a difference, Nixon said.",-1,0
+"Going from playing at Ole Miss to coming to play with this team, everybody here has a lot of speed.",-1,0
+"The DBs, same speed, same strength.",-1,0
+"There really is not much of a difference.",-1,0
+"The Knights defensive backs will have to deal with more than just fantastic speed from LSUs wideouts.",-1,0
+"As defensive line coach Shane Burnham said, their receivers look like tight ends.",-1,0
+"A mixture of size, speed, length and athleticism helps the Tigers create mismatches out wide against almost every opponent.",-1,0
+"But secondary coach Willie Martinez said his defensive backs already get a good primer for a high level of competition during each practice.",-1,0
+"We think we go against some pretty good wide receivers every day, he said.",-1,0
+"Weve got the tall guys.",-1,0
+"We've got the small guys, the medium guys, the quick guys, that change of direction.",-1,0
+"Being able to practice against those guys each and every day since we've been here allows us to be ready and prepared for the teams that we play each and every Saturday.",-1,0
+"Or in this case, in this game that we're playing on January 1.",-1,0
+"No.",-1,0
+"8 UCF will look to extend the nations longest win streak when it lines up against No.",-1,0
+"11 LSU on Jan. 1.",-1,0
+"Kickoff is set for 1 p.m. Eastern time and will air on ESPN.",-1,0
+"The Knights will once again get a shot to prove that they can withstand, match and excel against whatever comes their way from an SEC power.",-1,0
+"And in one area -- speed -- the Knights still believe, yes, UCF has an edge there.",-1,0
+"They've got some linebackers that can really run.",-1,0
+"I think it's going to be good matchup against our backs and guys that, when we get in space, we're going to see who's faster, offensive tackle Wyatt Miller said.",-1,0
+"I think we have the upper hand in that one, but we'll see.",-1,0
+"Java
+&gt;&gt;&gt;   
+Fri May 25 20:46:06 2007//controlfile  
+ Starting control autobackup  
+ Control autobackup written to DISK device  
+ handle '/ora_rman_backup/crtl_backup/c-4205638757-20070525-00'  
+ Fri May 25 20:46:11 2007 //  
+ Thread 1 advanced to log sequence 535  
+ Current log# 1 seq# 535 mem# 0: /dev/udpay/lv_redo11_256m  
+ Current log# 1 seq# 535 mem# 1: /dev/udpay/lv_redo12_256m  
+ Fri May 25 20:46:11 2007 //  
+ ARCH: Evaluating archive log 6 thread 1 sequence 534  
+ ARCH: Beginning to archive log 6 thread 1 sequence 534  
+ Creating archive destination LOG_ARCHIVE_DEST_1: '/archivelog/arch/1_534.dbf'  
+ Fri May 25 20:46:12 2007 //  
+ ARC0: Evaluating archive log 6 thread 1 sequence 534  
+ ARC0: Unable to archive log 6 thread 1 sequence 534  
+ Log actively being archived by another process  
+ Fri May 25 20:46:15 2007 //3  
+ ARCH: Completed archivinglog 6 thread 1 sequence 534  
+ Fri May 25 20:46:18 2007 //3  
+ Thread 1 advanced to log sequence 536  
+ Current log# 2 seq# 536 mem# 0: /dev/udpay/lv_redo21_256m 
+$ORACLE_HOME/bin/rman &lt; connect catalog rman/rman 
+ @rman;  
+ connect target sys/sys@udpay;  
+ CONFIGURE CONTROLFILE AUTOBACKUP FORMAT FOR DEVICE TYPE DISK TO '/ora_rman_backup/crtl_backup/%F';  
+ CONFIGURE CONTROLFILE AUTOBACKUP ON;  
+ CROSSCHECK ARCHIVELOG ALL;  
+ run{  
+ ALLOCATE CHANNEL ch1 DEVICE TYPE DISK;  
+ backup full databaseformat 'D:/%T_%d' include current controlfile;  
+ sql 'alter system archive log current';  
+ backupfilesperset 3 format 'D:/arch%u_%s_%p' archivelog all;  
+ DELETE NOPROMPT ARCHIVELOG UNTIL TIME 'SYSDATE-2';  
+ release channel ch1;  
+ }  
+ !!",-1,0
+"Log actively being archived by another process
+log_archive_max_processes2Oracle
+[oracle@jumper bdump]$ ps -ef|grep ora_arc
+oracle 11938 1 0 18:24 ?",-1,0
+"00:00:00 ora_arc0_eygle
+oracle 11940 1 0 18:24 ?",-1,0
+"00:00:00 ora_arc1_eygle
+oracle 16260 11894 0 20:21 pts/5 00:00:00 grep ora_arc
+*** 2007-06-06 20:23:50.510
+WAIT #0: nam='rdbms ipc message' ela= 59999293 p1=6000 p2=0 p3=0
+WAIT #0: nam='control file sequential read' ela= 76 p1=0 p2=1 p3=1
+WAIT #0: nam='control file sequential read' ela= 36 p1=0 p2=370 p3=1
+WAIT #0: nam='control file sequential read' ela= 36 p1=0 p2=8 p3=1
+WAIT #0: nam='control file sequential read' ela= 30 p1=0 p2=9 p3=1
+*** 2007-06-06 20:24:51.950
+WAIT #0: nam='rdbms ipc message' ela= 59999344 p1=6000 p2=0 p3=0
+WAIT #0: nam='control file sequential read' ela= 72 p1=0 p2=1 p3=1
+WAIT #0: nam='control file sequential read' ela= 35 p1=0 p2=370 p3=1
+WAIT #0: nam='control file sequential read' ela= 35 p1=0 p2=8 p3=1
+WAIT #0: nam='control file sequential read' ela= 29 p1=0 p2=9 p3=1
+'rdbms ipc message' 
+*** 2007-06-06 20:01:15.830
+WAIT #0: nam='rdbms ipc message' ela= 148300048 p1=14831 p2=0 p3=0
+a*** 2007-06-06 20:06:23.030
+WAIT #0: nam='rdbms ipc message' ela= 299999745 p1=30000 p2=0 p3=0
+a*** 2007-06-06 20:11:30.230
+WAIT #0: nam='rdbms ipc message' ela= 299999735 p1=30000 p2=0 p3=0
+a*** 2007-06-06 20:16:37.430
+WAIT #0: nam='rdbms ipc message' ela= 299999779 p1=30000 p2=0 p3=0
+a*** 2007-06-06 20:21:44.630
+alter system archive log currentOracle Post
+*** 2007-06-06 19:58:43.970
+WAIT #0: nam='rdbms ipc message' ela= 148134746 p1=30000 p2=0 p3=0
+WAIT #0: nam='control file sequential read' ela= 36 p1=0 p2=1 p3=1
+WAIT #0: nam='control file sequential read' ela= 29 p1=0 p2=369 p3=1
+WAIT #0: nam='control file sequential read' ela= 32 p1=0 p2=8 p3=1
+WAIT #0: nam='control file sequential read' ela= 29 p1=0 p2=10 p3=1
+:
+Wed Jun 6 19:58:43 2007
+ARCH: Evaluating archive log 4 thread 1 sequence 305
+ARCH: Beginning to archive log 4 thread 1 sequence 305
+Creating archive destination LOG_ARCHIVE_DEST_1: '/opt/oracle/product/9.2.0/dbs/arch1_305.dbf'
+Wed Jun 6 19:58:43 2007
+ARC1: Evaluating archive log 4 thread 1 sequence 305
+ARC1: Unable to archive log 4 thread 1 sequence 305
+Log actively being archived by another process
+switch logPost
+Oracle10g:
+Wed Jun 6 20:32:57 2007
+ARCH: Evaluating archive log 4 thread 1 sequence 75268
+Wed Jun 6 20:32:57 2007
+ARC0: Evaluating archive log 4 thread 1 sequence 75268
+ARC0: Unable to archive log 4 thread 1 sequence 75268
+Log actively being archived by another process
+Wed Jun 6 20:32:57 2007
+ARCH: Beginning to archive log 4 thread 1 sequence 75268 (2074.-1351690850:2074.-1351608674) (mmsdb)",-1,0
+"The Cowboys can clinch the NFC title with a win over the Buccaneers on, and a Seahawks win over the Chiefs will clinch a wild-card spot for them.",-1,0
+"But those arent the only things going on, as we take a look at The Posts Week 16 High Five.",-1,0
+"Last dance to watch
+Is this really the end for the Black Hole?",-1,0
+"When the Raiders play the Broncos on Sunday at the Oakland Coliseum, it might mark the final game they play in Oakland, with plans to relocated to Las Vegas next season.",-1,0
+"The thought of that made Raiders coach Jon Gruden a little introspective during the week.",-1,0
+"Grudens first head-coaching job came at age 34 in 1998 with the Raiders.",-1,0
+"The Coliseum has served as the Raiders home from 1966-81, and they return in 1995 (they played in Los Angeles from 1982-94).",-1,0
+"The city of Oaklands recent announcement of its plans to file a federal lawsuit against the Raiders and the NFL over the teams impending move to Las Vegas in 2020 has left matters very murky.",-1,0
+"The day after the lawsuit was filed, the Raiders pulled their offer to pay $7.5 million in rent for one final season in 2019 at the Oakland Coliseum off the table.",-1,0
+"Its a real football stadium, Gruden told reporters during the week.",-1,0
+"Its dirt, grass, its got tradition.",-1,0
+"Its where some of the best games in the history of football have been played.",-1,0
+"Its where some of the bestplayers in the history of the world have played football games.",-1,0
+"I mean there are a lot of things that have happened in that stadium and uh, next question.",-1,0
+"I dont want to start crying about a stadium.",-1,0
+"Gruden waxed poetic about just raging in the Black Hole, adding, Rocking and raging down there after the Steeler game [last weeks Oakland win over Pittsburgh], after a lot of wins over the years.",-1,0
+"Seeing a lot of the old highlights of great Raider teams, I get excited.",-1,0
+"I get emotional about it, and hopefully we get it all resolved so we can continue to play there.",-1,0
+"Possible farewell to watch
+Larry FitzgeraldAP
+When the Cardinals play their home finale against the Rams, its possible that will be the final home game in Arizona for icon Larry Fitzgerald.",-1,0
+"There has been much speculation about the future of Fitzgerald, the 15-year star receiver whos been to 11 Pro Bowls.",-1,0
+"His contract expires after this season, and general manager Steve Keim has told reporters the team will give Fitzgerald time to determine his future before he talks to him about another contract.",-1,0
+"This has led to many guesses, and the questions of late have dogged him.",-1,0
+"If I decide to retire, Ill let you guys know, Fitzgerald told reporters late in the week.",-1,0
+"Man, seriously.",-1,0
+"So, I dont understand why we keep asking these questions.",-1,0
+"You know me, Ive been answering for the last three years.",-1,0
+"Nothings going to change.",-1,0
+"Im never going to tell you, This is my last day.",-1,0
+"Im excited.",-1,0
+"Honor me.",-1,0
+"Those words would never come out of my mouth, ever.",-1,0
+"Its been a trying season for the 35-year-old Fitzgerald, whose numbers understandably have declined thanks to the teams quarterback situation in constant flux.",-1,0
+"The Cardinals began the season with Sam Bradford before changing to rookie Josh Rosen, whos struggled.",-1,0
+"The Cardinals are 3-11, and there is heavy speculation that rookie coach Steve Wilks might not make it to a second season.",-1,0
+"Fitzgerald, who entered this year with three consecutive 1,000-yard receiving seasons, has 59 catches for 645 yards and five TDs and has eclipsed 100 yards receiving in only one game.",-1,0
+"Asked if hes thought about the possibility of Sunday being his final home game, the humble Fitzgerald said, No thoughts on it, really.",-1,0
+"Its just another game for me.",-1,0
+"If anything changes, Ill let you guys know, though.",-1,0
+"Post-Cam period to watch
+It looks like Panthers quarterback Cam Newton will be shut down for the season because of his injured throwing shoulder.",-1,0
+"According to Panthers coach Ron Rivera, Newton definitely wont play Sunday against the Falcons.",-1,0
+"Enter backup Taylor Heinicke, whos thrown just five passes in two NFL seasons.",-1,0
+"Rivera said he gives the Panthers their best chance to win this week largely because of Newtons inability to throw deep passes as a result of his ailing shoulder.",-1,0
+"Newton has completed just nine passes of 20 yards or more this season and has five INTs and no TDs when throwing 15 or more yards during the Panthers current six-game losing streak which has left them 6-8 and virtually eliminated playoff contention.",-1,0
+"Cam NewtonGetty Images
+Its funny, because some of the DBs actually tell us on the field were not scared of yall throwing deep, Panthers receiver Jarius Wright told reporters.",-1,0
+"Theyve actually mentioned that multiple times.",-1,0
+"Just having [Taylor] out there keeps everybody honest.",-1,0
+"Wright, who played with Heinicke at Minnesota, sounded like hes looking forward to catching passes from him.",-1,0
+"The guy can throw the heck out of it, Wright said.",-1,0
+"He does a great job of reading coverages and making quick decisions.",-1,0
+"A lot of people dont realize he can move.",-1,0
+"Hes not a sitting duck back in the pocket.",-1,0
+"Newton, who underwent shoulder surgery during the 2017 offseason, hasnt been right for weeks.",-1,0
+"He hasnt rushed for a TD in the past seven games and has rushed for 33 or more yards rushing only once in that span.",-1,0
+"In the first seven games, he rushed for four touchdowns and had more than 33 yards six times.",-1,0
+"Newton was sacked nine times over the past three games and 19 times over the past seven after being sacked just 10 times the first seven games.",-1,0
+"After a 12-9 loss to the Saints on Monday, during which Newton rushed five times for 15 yards and had a season-low 52.5 passer rating, Carolina center Ryan Kalil said it was obvious after watching film of the game that Newton couldnt do it.",-1,0
+"Asked if its possible Newton could play in the Panthers season finale at New Orleans if they still had a mathematical chance to get into the playoffs, Rivera called it unlikely but added, crazy things can happen.",-1,0
+"Dallas rebound to watch
+Call it spin or whistling past a graveyard.",-1,0
+"Or call it prescient.",-1,0
+"But, after the Cowboys lost, 23-0, to the Colts last week, some of their players actually said they believed the loss might have been good for them.",-1,0
+"Quarterback Dak Prescott told reporters he thought maybe the Cowboys were too hot to trot after a five-game winning streak.",-1,0
+"Running back Ezekiel Elliott said, We needed to get put in check.",-1,0
+"As the 8-6 Cowboys prepared to play host to the Buccaneers with a chance to clinch the NFC East, coach Jason Garrett said he didnt agree with the narrative that his team had gotten cocky or complacent.",-1,0
+"With the Eagles (7-7) and Redskins (7-7) winning last Sunday, the Cowboys face more pressure to win this week Sunday.",-1,0
+"Three times in the Garrett era the Cowboys have had win-and-in scenarios, and they lost all three times.",-1,0
+"Garrett referred back to when the Cowboys were 3-5 and floundering as a show of their strength rebounding this season and believes this team is different.",-1,0
+"It goes back to mental toughness, Garrett told reporters.",-1,0
+"I think were all challenged by those things in our lives, in our careers, and certainly a football team gets challenged, as well.",-1,0
+"Its a matter of putting that last experience behind you and getting focused on this one and be your best for this experience through your preparation and through your focus and intensity when youre locked in on it.",-1,0
+"I think our team has actually done a really good job of that over the course of the year, handling some early adversity and came back and we won a few games in a row.",-1,0
+"Baker and Hue watch
+When the Browns play host to the Bengals, it will pit Browns rookie quarterback against his first NFL coach, Hue Jackson, whos now a member of the Bengals coaching staff after being fired by Cleveland earlier this season.",-1,0
+"After Jackson was fired, Mayfield didnt exactly have a lot of nice things to say about him.",-1,0
+"Mayfield tweaked Jackson for joining the Bengals, a rival of the Browns.",-1,0
+"And Cleveland got the best of the first meeting this season, a 35-20 Week 12 win at Cincinnati.",-1,0
+"When Bengals coach Marvin Lewis was asked by reporters about the Jackson-Mayfield relationship, it clearly touched a nerve.",-1,0
+"You want to talk about Browns and the Bengals?",-1,0
+"Lewis asked.",-1,0
+"Other than that, were done.",-1,0
+"Mayfield has been good enough in his rookie season that he was named as a fourth alternate in the Pro Bowl.",-1,0
+"Hes helped make a Browns franchise which was 3-36-1 under Jackson relevant again, having gone 4-2 since his firing.",-1,0
+"The young man has it, Browns interim coach Gregg Williams said.",-1,0
+"The energy that he brings to the game is unbelievable, receiver Rashard Higgins told reporters.",-1,0
+"Mayfield is one of just 11 rookies ever to have thrown for 3,000 yards and 20 TDs, and hes within five TDs of tying the rookie record of 26, shared by Peyton Manning and Russell Wilson.",-1,0
+"I believe hes one of a kind, receiver Breshad Perriman told reporters.",-1,0
+"We all just go as Bake goes.",-1,0
+"Even with the Browns playoff chances virtually non-existent, Mayfield is pushing his teammates for a strong finish in the final two games (Bengals and Ravens) with a chance to finish with the first winning season since 2007.",-1,0
+"We want to win our last two games, he said.",-1,0
+"Any guys on this team that dont want to do that, they need to get out.",-1,0
+"This story is aboutCowboys
+Published25m
+Share This Story On...
+Louis DeLuca/Staff Photographer 
+Dallas Cowboys quarterback Dak Prescott (4) looks for a receiver during the Tampa Bay Buccaneers vs. the Dallas Cowboys NFL football game at AT&amp;T Stadium in Arlington, Texas on Sunday, December 18, 2016.",-1,0
+"(Louis DeLuca/The Dallas Morning News)
+By
+Jon Machota , Staff Writer Contact Jon Machotaon Twitter:@jonmachota
+Here are three matchups to follow when the Cowboys host the Buccaneers on Sunday...
+Cowboys O-line vs.",-1,0
+"Buccaneers D-line
+Dallas was without All-Pro right guard Zack Martin last Sunday in Indianapolis.",-1,0
+"Starting left guard Xavier Su'a-Filo exited early in the second quarter with an eye injury.",-1,0
+"Su'a-Filo is expected to start against Tampa, but Martin is questionable.",-1,0
+"The Cowboys will need all the help they can get against a talented Buccaneers defensive front.",-1,0
+""Each week it seems like we got a unique challenge as a lot of teams in this league have put a lot of investment in that front," Cowboys offensive coordinator Scott Linehan said.",-1,0
+""And they're very similar to a lot of teams that we play in our division."",-1,0
+"Defensive end Jason Pierre-Paul leads the team with 11.5 sacks, followed by defensive end Carl Nassib with 6.5 and defensive tackle Gerald McCoy with 6.",-1,0
+"Tampa Bay's fourth starter up front is defensive tackle Vita Vea.",-1,0
+"The 12th overall pick in this year's draft was one of the Cowboys' 30 national pre-draft visitors.",-1,0
+"Chris O'Meara/AP 
+Tampa Bay Buccaneers wide receiver Mike Evans (13) before an NFL football game against the San Francisco 49ers Sunday, Nov. 25, 2018, in Tampa, Fla. (AP Photo/Chris O'Meara)
+Cowboys DBs vs. Bucs passing game
+Atlanta superstar receiver Julio Jones is the only player with more receiving yards than Tampa Bay's Mike Evans this season.",-1,0
+"Jameis Winston's favorite target has 74 receptions for 1,328 yards and five touchdowns on 120 targets.",-1,0
+"Evans also has 24 receptions of 20-or-more yards, second only to Kansas City's Tyreek Hill.",-1,0
+"On the other hand, there should be opportunities for the Dallas secondary to make plays against a Bucs offense that leads the NFL with 25 interceptions, five more than any other team.",-1,0
+""Evans, he's elite now," Cowboys defensive coordinator Rod Marinelli said.",-1,0
+""Somehow, when he starts scrambling, he finds No.",-1,0
+"13.",-1,0
+"They do a great job.",-1,0
+"They have great chemistry.",-1,0
+"[Winston's] a terrific quarterback, mobile guy and in the pocket.",-1,0
+"I think he's a winner.",-1,0
+"That guy just fights every down.",-1,0
+"He's a big-time competitor."",-1,0
+"Tom Fox/Staff Photographer 
+Dallas Cowboys outside linebacker Leighton Vander Esch (55) and middle linebacker Jaylon Smith (54) combine for the tackle of Atlanta Falcons wide receiver Julio Jones (11) during the third quarter at Mercedes-Benz Stadium in Atlanta, Sunday, November 18, 2018.",-1,0
+"The Cowboys pulled out a 22-19 win.",-1,0
+"(Tom Fox/The Dallas Morning News)
+Linebackers
+Carolina's Luke Kuechly and Seattle's Bobby Wagner were recognized earlier in the week as the NFC's two inside linebackers named to the Pro Bowl.",-1,0
+"The Cowboys and Buccaneers have a few players that were worthy of the conversation.",-1,0
+"Jaylon Smith and Leighton Vander Esch are both already over 100 tackles on the season.",-1,0
+"Tampa Bay's Lavonte David, who made the Pro Bowl in 2015, is over 100 tackles for the sixth time in the last seven seasons.",-1,0
+"David is one of the defenders Sean Lee studies most in the offseason.",-1,0
+""He's just an unbelievable athlete with great instincts who plays extremely hard and has played well for a long time," Lee said.",-1,0
+""He's a guy I've watched a ton of tape on, trying to steal stuff off of him."",-1,0
+"Twitter: @jonmachota
+This Topic is Missing Your Voice.",-1,0
+"View Comments",-1,0
+"Its not you, wide receivers.",-1,0
+"Its Julian Love.",-1,0
+"O.K., maybe thats not entirely true.",-1,0
+"In any breakupbe it romantic or pass-relatedeach party usually deserves a share of the blame/credit.",-1,0
+"And sometimes theres another guy (the quarterback) contributing to the predicament.",-1,0
+"This may feel like an inopportune time of year to discuss such matters, but there really is no good time.",-1,0
+"So on the eve of Christmas, and fairly close to the eve of the College Football Playoff and a Cotton Bowl matchup against Clemson, Notre Dame cornerback Love is going to teach us how to break up.",-1,0
+"Because, as the Fighting Irish video department pointed out earlier this season, the junior from Westchester, Ill., is very good at breaking up.",-1,0
+"Julian Loves breakup tip No.",-1,0
+"1: Let your fear be your guide.",-1,0
+"Love didnt come to Notre Dame expecting to wind up the schools career leader in pass breakups.",-1,0
+"In high school, he sought interceptions.",-1,0
+"He thought that would continue into college.",-1,0
+"Then he found himself on the field as a true freshman at Darrell K RoyalTexas Memorial Stadium during Notre Dames 5047 double-overtime loss to Texas.",-1,0
+"A cannon boomed after every Longhorns touchdown, and Love went from thinking about interceptions to thinking about survival.",-1,0
+"Love was one of five true freshmen who wound up logging starts in the Notre Dame secondary that season*.",-1,0
+"For part of that season, Love was too afraid to turn his head while in coverage.",-1,0
+"Youre so nervous that you dont even want to look back for the ball when its thrown, he says.",-1,0
+"Its like I dont want to look and miss.",-1,0
+"It was just nerves that made me do that early on.",-1,0
+"*Want an easy recipe for going 48?",-1,0
+"Find yourself in a spot that requires that many young contributors in the defensive backfield.",-1,0
+"Though born of fear, that habit taught Love a few things.",-1,0
+"First, college quarterbacks might tell you where theyre throwing before the ball is even snapped.",-1,0
+"Love noticed that quarterbacks at that level may give away the balls destination by where they look before the play, by the way they catch the snap or by where their head turns when they catch the snap.",-1,0
+"Love also realized that receivers would make terrible poker players.",-1,0
+"It might sound weird, but if Im running Im looking when he turns his head at his eyes, Love says.",-1,0
+"If I see his eyes getting wide
+Think about it from the receivers perspective.",-1,0
+"Youre giving maximum physical exertion, and you have to concentrate on catching a fast-moving oblong spheroid with one or more people waiting to hit you.",-1,0
+"Your eyes will turn into saucers when the ball comes near, no matter how badly youd like to hide your anticipation.",-1,0
+"Thats not something they can control, Love says.",-1,0
+"As Love grew more comfortable with the speed of the game, he learned that on some plays, he could gather this information and turn his head to see the quarterback or the ball.",-1,0
+"The fear fried his nerves at first, but it made him better in the long run.",-1,0
+"It transitioned to me looking when its appropriate and learning the key details of what the receivers are looking for, Love says.",-1,0
+"Julian Loves breakup tip No.",-1,0
+"2: Know when to break up and when to make a bigger commitment.",-1,0
+"The out route simultaneously offers the most potential glory and the most potential misery for a cornerback.",-1,0
+"Jump the route and arrive when the ball does, and it might be a pick-six.",-1,0
+"Jump the route too early, and the receiver will make the catch and run all day.",-1,0
+"Get caught flat-footed trying to decide whether to jump the route or secure the tackle, and then things can get really embarrassing.",-1,0
+"Thats where double moves come into play, Love says.",-1,0
+"A double move is a combination of a short route and a much longer route.",-1,0
+"A Sluggo (slant and go) is exactly what it sounds like.",-1,0
+"On that route, an outside receiver cuts in, plants and pushes straight upfield.",-1,0
+"In the out route scenario described above, Love has to beware of the out and up.",-1,0
+"A receiver might run an out, then stick his foot in the ground and push upfield when a corner bites on the false route.",-1,0
+"But if he reads the quarterbacks tells and reads the receivers eyes, Love can make the correct choice.",-1,0
+"And sometimes, a breakup isnt necessary.",-1,0
+"Sometimes, its better to pull in rather than push awayespecially when pulling in results in a touchdown for your team.",-1,0
+"Julian Loves breakup tip No.",-1,0
+"3: Even when youre planning to break up, sometimes you have to stay together and let them down easy (or hard).",-1,0
+"When guarding a receiver, Love will use his near arm to try to swat the ball.",-1,0
+"The other arm?",-1,0
+"Watch as it hovers around the receivers waist.",-1,0
+"Love has to be careful because if he gets too handsy with his off arm, he might draw a flag.",-1,0
+"But he needs that arm ready to close around the receivers body.",-1,0
+"If Love can deflect the ball, great.",-1,0
+"But sometimes the pass reaches its intended target.",-1,0
+"So Love needs that off arm ready to constrict and make the tackle to keep the receiver from gaining any additional yardage.",-1,0
+"Julian Loves breakup tip No.",-1,0
+"4: When in doubt, replace his hands.",-1,0
+"Todd Lyght, the 12-year NFL veteran who coaches Notre Dames secondary, teaches his DBs that the surest way to break up a pass is to find a way to replace the receivers hands with one of your own.",-1,0
+"So even if the quarterback masks where hes throwing the ball and the receivers eyes dont go wide when the ball approaches, the receiver cant fake bringing his hands into position to catch the ball.",-1,0
+"The DB has to take care not to shoot his hand between the receivers hands too early, because that would draw a flag if he knocks the receivers hands out of position before the pass reaches its destination.",-1,0
+"But if the DB times it correctly, his hand will arrive and take up the space between the receivers hands precisely when the ball arrives.",-1,0
+"Now lets watch Loves breakup tips in action.",-1,0
+"One of his favorite breakups came in 2017 on a third-and-two play at Stanford.",-1,0
+"Love was covering 6'3", 225-pound receiver J.J. Arcega-Whiteside, who basically is a living, breathing third-down conversion.",-1,0
+"The defense Notre Dame was playing called for Love to play inside leverage before the snap.",-1,0
+"Because of the play Stanford called, that put Love at an immediate disadvantage.",-1,0
+"He got a good release off me, Love says.",-1,0
+"And I jumped inside to block it, but he wasnt going inside.",-1,0
+"I was beat off the release.",-1,0
+"Arcega-Whiteside ran a corner route, pushing about 15 yards up the field before angling toward the sideline.",-1,0
+"Love, playing catch-up the entire time after getting beat off the line of scrimmage, didnt have much time to look at quarterback K.J.",-1,0
+"Costello.",-1,0
+"Instead, he used tip No.",-1,0
+"1.",-1,0
+"Take a look at Arcega-Whitesides eyes as the ball approaches.",-1,0
+"That gave Love a basic idea of when the ball would arrive.",-1,0
+"He knew by the eyes and the fact that Arcega-Whiteside slowed that Costello had thrown the ball slightly behind where it was supposed to go.",-1,0
+"An interception was still impossible, but the slight misfire created a breakup opportunity.",-1,0
+"Now, Love just had to replace Arcega-Whitesides hands.",-1,0
+"Love held his right hand for a beat as he waited for the ball.",-1,0
+"Then he fired it into the gap between Arcega-Whitesides waiting hands just as they began to come together in anticipation of the catch.",-1,0
+"When the ball arrived, it struck the back of Loves right handwhich was directly between each of Arcega-Whitesides hands.",-1,0
+"Breaking up will always be hard to do, but its a little easier if you follow Loves advice.",-1,0
+"Notre Dame Fans: Order SIs College Football Playoff Preview Special Issue
+Ive already ranked the best Christmas carols, but I have yet to rank the best Christmas movies.",-1,0
+"That changes today.",-1,0
+"1.",-1,0
+"National Lampoons Christmas Vacation2.",-1,0
+"Its a Wonderful Life3.",-1,0
+"Die Hard4.",-1,0
+"How The Grinch Stole Christmas (1967 version)5.",-1,0
+"Trading Places6.",-1,0
+"Home Alone7.",-1,0
+"The Nightmare Before Christmas8.",-1,0
+"Love Actually9.",-1,0
+"Elf10.",-1,0
+"Miracle On 34th Street (1947 version)
+1.",-1,0
+"Want to watch Nick Saban and ESPNs Maria Taylor play hoops while also advertising for a luxury car brand of which Saban just happens to co-own a dealership?",-1,0
+"Of course you do.",-1,0
+"2.",-1,0
+"Michigan State landed its first Australian punter this week when Jack Bouwmeester from Bendigo signed with the Spartans.",-1,0
+"On National Signing Day, Michigan State coach Mark Dantonio joined myself and Jason Horowitz on Playbook on SiriusXM Channel 84.",-1,0
+"I asked Dantonio about the process of recruiting Aussie punters, and his answer was amazing.",-1,0
+"3.",-1,0
+"Meanwhile, Michigan quarterback Shea Patterson will be returning for his senior season in Ann Arbor.",-1,0
+"The kids dragged me to Bumblebee this weekend.",-1,0
+"I wasnt thrilled.",-1,0
+"Michael Bay had thoroughly destroyed my favorite childhood toy line and cartoon at the multiplex, and I didnt feel like further contributing to its demise.",-1,0
+"So imagine my surprise when I watched a Transformers movie directed by someone who actually liked Transformers.",-1,0
+"Bay was a producer, but he let Travis Knight make a movie for all of us who cried when Optimus Prime died in the original Transformers animated movie.",-1,0
+"(Because we were seven.)",-1,0
+"Hopefully, this will make enough money to convince Bay to let Knight make a new series of movies that are actuallywhats the word?good.",-1,0
+"Im enjoying some time at home after a college football season that felt like it went by way too quickly, which means I havent been sampling all the delicious things this glorious nation has to offer.",-1,0
+"But this time has given me a chance to reflect on the best things I ate this season.",-1,0
+"So its time to present the Piggies
+Best wings:Dak in Chicago
+Best cheap eats:Russian Dumplings at Pauls Pelmeni in Madison, Wis.
+Best Choose-Your-Own-Adventure:Meat skewers at Pot N Spicy in Portland
+Best burgers:Honest Abes in Lincoln, Neb.",-1,0
+"Best Meal:Toups Meatery in New Orleans",-1,0

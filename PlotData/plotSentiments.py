@@ -1,5 +1,5 @@
 import pandas as pd
-import MongoDBConn.mongoCon as mc
+import DBConn.mongoCon as mc
 import matplotlib.pyplot as plt
 import seaborn as sns
 

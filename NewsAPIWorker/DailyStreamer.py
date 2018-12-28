@@ -1,7 +1,7 @@
 from newsapi import NewsApiClient
 import DataAccess.data_access as da
 import datetime
-import MongoDBConn.mongoCon as mongo
+import DBConn.mongoCon as mongo
 import uuid
 
 newsapi = NewsApiClient(api_key='00e887a151f345c68dc57a1c19526283')

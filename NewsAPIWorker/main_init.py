@@ -3,8 +3,8 @@ from datetime import date, datetime, timedelta
 import DataAccess.data_access as da
 import NewsAPIWorker.mongoHandler as mongohandler
 
-start = date(2018, 1, 1)
-end = date(2018, 12, 23)
+start = date(2018, 12, 18)
+end = date(2018, 12, 27)
 delta = timedelta(days=7)
 dates = oneTimer.populate_dates(start,end,delta)
 keyPhrases = da.get_news_keyword()['keyphrase']
