@@ -1,8 +1,7 @@
 import DBConn.mysqlCon as mysqlcon
 import DBConn.mongoCon as mc
 import NLPAnalysis.simpleParsing as sp
-import NewsAPIWorker.OneTimeCollector as oneTimer
-from datetime import date, datetime, timedelta
+import datetime
 
 def get_keyWords():
     wordList = ["trade war","trade tension","china","singapore","malaysia","indonesia","thailand","taiwan","india",
@@ -30,6 +29,7 @@ def get_all_news_for_day(date):
     query = {"publishedAt": {"$regex": date}}
     print(query)
     news_article = newsAPIArticles_collection.find(query)
+    mongoCon.close()
     return news_article #this is a mongodb cursor
 
 def process_news_list(newsArticles):
@@ -41,7 +41,6 @@ def get_news_analysis(newsItem):
     keyWord_list = get_keyWords()
     key_word_counts = {}
     for keyWord in keyWord_list:
-        #print(newsItem['content'])
         count = sp.get_occurances(newsItem['content'],keyWord)
         key_word_counts[keyWord] = count
     return key_word_counts
@@ -68,12 +67,8 @@ def insert_news_to_mysql(newsItem,counts):
     return None
 
 def execute_main():
-    start = date(2018, 12, 20)
-    end = date(2018, 12, 27)
-    delta = timedelta(days=1)
-    dates = oneTimer.populate_dates(start, end, delta)
-    for oneday in dates:
-        newsArticles = get_all_news_for_day(oneday.strftime("%Y-%m-%d"))
-        process_news_list(newsArticles)
+    today = datetime.datetime.now().strftime('%Y-%m-%d')
+    newsArticles = get_all_news_for_day(today)
+    process_news_list(newsArticles)
 
 execute_main()

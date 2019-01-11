@@ -34,8 +34,8 @@ def get_data(searchTheme, startDate):
     return news_article  # this is a mongodb cursor
 
 
-company = "DBS"
-date = "2018-12-22"
+company = "OCBC"
+date = "2018-12-20"
 articles = get_data(company,date)
 contents = get_content(articles)
 write_content_file(contents,company,date)

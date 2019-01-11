@@ -13,9 +13,9 @@ def populate_dates(start,end,delta):
     return date_list
 
 
-def get_urls(start,end,keyphrase):
-    baseUrl = "https://newsapi.org/v2/everything?q=%s&apiKey=00e887a151f345c68dc57a1c19526283&language=en&pageSize=100&from=%s&to=%s"
-    Url = baseUrl % (keyphrase,start,end)
+def get_urls(start,keyphrase):
+    baseUrl = "https://newsapi.org/v2/everything?q=%s&apiKey=00e887a151f345c68dc57a1c19526283&language=en&pageSize=100&from=%s"
+    Url = baseUrl % (keyphrase,start)
     return Url
 
 
